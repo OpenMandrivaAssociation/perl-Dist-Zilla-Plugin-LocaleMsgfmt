@@ -1,5 +1,5 @@
 %define upstream_name    Dist-Zilla-Plugin-LocaleMsgfmt
-%define upstream_version 1.100970
+%define upstream_version 1.202
 
 Name:       perl-%{upstream_name}
 Version:    %perl_convert_version %{upstream_version}
