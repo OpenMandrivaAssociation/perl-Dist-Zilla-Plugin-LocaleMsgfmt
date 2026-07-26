@@ -1,15 +1,13 @@
 %define upstream_name    Dist-Zilla-Plugin-LocaleMsgfmt
-%define upstream_version 1.203
-
 Name:		perl-%{upstream_name}
-Version:	%{upstream_version}
-Release:	1
+Version:	1.203
+Release:	2
 
 Summary:	Dist::Zilla plugin that compiles Local::Msgfmt .po files to .mo files
 License:	GPL+ or Artistic
 Group:		Development/Perl
 Url:		http://github.com/jquelin/Dist-Zilla-Plugin-LocaleMsgfmt/tree
-Source0:	https://cpan.metacpan.org/authors/id/J/JQ/JQUELIN/Dist-Zilla-Plugin-LocaleMsgfmt-%{upstream_version}.tar.gz
+Source0:	https://cpan.metacpan.org/authors/id/J/JQ/JQUELIN/Dist-Zilla-Plugin-LocaleMsgfmt-%{version}.tar.gz
 
 BuildRequires:	make
 BuildRequires:	perl-devel
@@ -28,7 +26,7 @@ This plugin will compile all of the .po files it finds in the locale
 directory into .mo files, via Locale::Msgfmt.
 
 %prep
-%setup -q -n %{upstream_name}-%{upstream_version}
+%setup -q -n %{upstream_name}-%{version}
 
 %build
 perl Makefile.PL INSTALLDIRS=vendor
